@@ -1,0 +1,35 @@
+.promo {
+    max-height: 700px;
+    background-color: #8d8d8d;
+    background-image: url('./../../img/promo/promo-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+}
+
+.promo__row {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.promo__content {
+    margin-top: auto;
+    margin-bottom: 59px;
+    max-width: 560px;
+}
+
+.promo__subtitle {
+    margin-bottom: 4px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.promo__title {
+    margin-bottom: 10px;
+    font-size: 40px;
+    line-height: 1.25;
+}

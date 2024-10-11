@@ -1,0 +1,41 @@
+.nav {}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav__item {}
+
+.nav__link {
+    position: relative;
+    font-size: 14px;
+    text-decoration: none;
+    color: #171717;
+    transition: color .4s ease-in;
+    
+    
+    &:hover {
+        color: #c9a96e;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #c9a96e;
+        transform: scale(0);
+        transform-origin: right;
+
+        transition: transform .4s ease-in;
+    }
+
+    &:hover::before {
+        transform: scale(1);
+        transform-origin: left;
+    }
+}
