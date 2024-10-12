@@ -5,6 +5,7 @@
 @import './base/container';
 @import './base/typography';
 @import './base/utils';
+@import './base/svg-icons';
 
 //header
 @import './sections/header';
@@ -19,3 +20,4 @@
 @import './sections/blog';
 @import './blocks/article-card';
 @import './blocks/sidebar';
+@import './blocks/pagination';

@@ -9,6 +9,12 @@
 
 .blog__content {
     display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.blog__articles {
+    display: flex;
     flex-wrap: wrap;
     gap: 33px 30px;
 }
@@ -17,4 +23,8 @@
 
 .blog__sidebar {
     width: 270px;
+}
+
+.blog__pagination {
+    align-self: center;
 }
