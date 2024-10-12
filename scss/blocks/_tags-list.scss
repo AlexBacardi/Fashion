@@ -1,0 +1,29 @@
+.tags__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags__item {
+    padding: 6px 15px;
+    font-size: 14px;
+    background-color: #f8f9fa;
+    transition: transform 0.3s ease-in;
+    
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+
+    &:hover .tags__link {
+        color: #c9a96e;
+    }
+}
+
+.tags__link {
+    color: #666666;
+    text-decoration: none;
+
+    transition: color 0.3s ease-in;
+    
+}

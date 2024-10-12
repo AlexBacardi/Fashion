@@ -551,6 +551,7 @@ body {
 
 .about__img {
   height: 180px;
+  background-color: #8d8d8d;
 }
 .about__img img {
   width: 100%;
@@ -661,5 +662,30 @@ body {
   font-size: 12px;
   text-decoration: none;
   color: #999999;
+  transition: color 0.3s ease-in;
+}
+
+.tags__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags__item {
+  padding: 6px 15px;
+  font-size: 14px;
+  background-color: #f8f9fa;
+  transition: transform 0.3s ease-in;
+}
+.tags__item:hover {
+  transform: translateY(-2px);
+}
+.tags__item:hover .tags__link {
+  color: #c9a96e;
+}
+
+.tags__link {
+  color: #666666;
+  text-decoration: none;
   transition: color 0.3s ease-in;
 }/*# sourceMappingURL=main.css.map */
