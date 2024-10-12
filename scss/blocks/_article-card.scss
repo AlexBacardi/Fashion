@@ -55,6 +55,13 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #c9a96e;
+
+    transition: color 0.3s ease-in;
+    
+
+    &:hover {
+        color: #171717;
+    }
 }
 
 .article__title {
