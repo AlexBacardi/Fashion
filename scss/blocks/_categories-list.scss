@@ -1,0 +1,32 @@
+.categories__list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.categories__item {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 14px;
+    color: #666666;
+    border-bottom: 1px solid #E5E5E5;
+
+}
+
+.categories__item:hover a,
+.categories__item:hover .categories__num {
+    color: #c9a96e;
+}
+
+.categories__link {
+    color: #666666;
+    text-decoration: none;
+    transition: color 0.3s ease-in;
+}
+
+.categories__num {
+    transition: color 0.3s ease-in;
+}

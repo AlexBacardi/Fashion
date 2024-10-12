@@ -15,6 +15,10 @@
         max-width: unset;
         margin-top: 30px;
     }
+
+    &--small {
+        max-width: 270px;
+    }
 }
 
 .article__img {
@@ -34,6 +38,11 @@
     &--wide {
         width: 100%;
     }
+
+    &--small {
+        width: 270px;
+        height: 160px;
+    }
 }
 
 .article__body {
@@ -45,6 +54,10 @@
     &--wide {
         padding: 25px 31px;
         align-items: flex-start;
+    }
+
+    &--small {
+        padding: 15px 10px 14px;
     }
 }
 
@@ -85,6 +98,11 @@
     &--wide {
         max-width: unset;
         text-align: left;
+    }
+
+    &--small {
+        font-size: 18px;
+        line-height: 1.44;
     }
 }
 

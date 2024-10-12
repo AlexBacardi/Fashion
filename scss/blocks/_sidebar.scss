@@ -5,7 +5,12 @@
     gap: 70px;
 }
 
-.sidebar__item {}
+.sidebar__item {
+
+    .article__card--small + .article__card--small {
+        margin-top: 30px;
+    }
+}
 
 .sidebar__caption {
     margin-bottom: 20px;
