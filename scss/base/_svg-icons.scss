@@ -1,6 +1,56 @@
 .svg-path-left,
 .svg-path-right {
     width: 6px;
-    height: 10px;
+    height: 20px;
     stroke: currentColor;
+}
+
+.svg-facebook {
+    width: 11px;
+}
+
+.svg-pinterest {
+    width: 15px;
+}
+
+.svg-vimeo {
+    width: 20px;
+}
+
+.svg-dribbble {
+    width: 20px;
+}
+
+.svg-twitter {
+    width: 20px;
+}
+
+.svg-behance {
+    width: 20px;
+}
+
+.svg-instagram {
+    width: 20px;
+}
+
+.svg-youtube {
+    width: 16px;
+}
+
+.svg-google {
+    width: 22px;
+}
+
+.svg-facebook,
+.svg-pinterest,
+.svg-vimeo,
+.svg-dribbble,
+.svg-twitter,
+.svg-behance,
+.svg-instagram,
+.svg-youtube,
+.svg-google {
+    height: 20px;
+    fill: #5A5A5A;
+    transition: fill 0.3s ease-in;
 }

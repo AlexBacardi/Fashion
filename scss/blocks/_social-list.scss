@@ -1,0 +1,34 @@
+.social__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+
+
+}
+
+.social__item {
+    max-width: 88px;
+    padding: 17px 32px 13px;
+    background-color: #f8f9fa;
+
+    &:hover svg,
+    &:hover .social__link {
+        fill: #c9a96e;
+        color: #c9a96e;
+    }
+}
+
+.social__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+
+    font-family: "PT Sans", sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+
+    color: #999999;
+    transition: color 0.3s ease-in;
+    
+}

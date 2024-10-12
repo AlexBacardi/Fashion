@@ -1,6 +1,13 @@
 .about__card {
     width: 270px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in;
+    
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 2px 6px 0 rgba(151, 151, 151, 0.3);
+    }
 }
 
 .about__img {
@@ -55,7 +62,7 @@
         color: #c9a96e;
         text-decoration: none;
         transition: color 0.3s ease-in;
-        
+
         &:hover {
             color: #171717;
         }

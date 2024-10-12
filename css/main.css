@@ -144,8 +144,58 @@ body {
 .svg-path-left,
 .svg-path-right {
   width: 6px;
-  height: 10px;
+  height: 20px;
   stroke: currentColor;
+}
+
+.svg-facebook {
+  width: 11px;
+}
+
+.svg-pinterest {
+  width: 15px;
+}
+
+.svg-vimeo {
+  width: 20px;
+}
+
+.svg-dribbble {
+  width: 20px;
+}
+
+.svg-twitter {
+  width: 20px;
+}
+
+.svg-behance {
+  width: 20px;
+}
+
+.svg-instagram {
+  width: 20px;
+}
+
+.svg-youtube {
+  width: 16px;
+}
+
+.svg-google {
+  width: 22px;
+}
+
+.svg-facebook,
+.svg-pinterest,
+.svg-vimeo,
+.svg-dribbble,
+.svg-twitter,
+.svg-behance,
+.svg-instagram,
+.svg-youtube,
+.svg-google {
+  height: 20px;
+  fill: #5A5A5A;
+  transition: fill 0.3s ease-in;
 }
 
 .header {
@@ -492,6 +542,11 @@ body {
 .about__card {
   width: 270px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in;
+}
+.about__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 2px 6px 0 rgba(151, 151, 151, 0.3);
 }
 
 .about__img {
@@ -578,5 +633,33 @@ body {
 }
 
 .categories__num {
+  transition: color 0.3s ease-in;
+}
+
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.social__item {
+  max-width: 88px;
+  padding: 17px 32px 13px;
+  background-color: #f8f9fa;
+}
+.social__item:hover svg, .social__item:hover .social__link {
+  fill: #c9a96e;
+  color: #c9a96e;
+}
+
+.social__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: #999999;
   transition: color 0.3s ease-in;
 }/*# sourceMappingURL=main.css.map */
