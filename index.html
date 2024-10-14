@@ -141,7 +141,7 @@
             </div>
         </section>
         <!-- blog -->
-        <section class="blog none">
+        <section class="blog">
             <h2 class="visually-hidden">Fashion blog article</h2>
             <div class="container">
                 <div class="blog__row">
@@ -399,7 +399,9 @@
                     <!-- sidebar -->
                     <aside class="sidebar">
                         <div class="sidebar__item">
-                            <h2 class="sidebar__caption">About the author</h2>
+                            <h2 class="sidebar__caption sidebar__caption--nopadding">
+                                <button class="sidebar__btn" type="button">About the author</button>
+                            </h2>
                             <!-- about author -->
                             <article class="about__card">
                                 <div class="about__img">
@@ -423,66 +425,70 @@
                         </div>
                         <div class="sidebar__item">
                             <h2 class="sidebar__caption">Featured posts</h2>
-                            <!-- article -->
-                            <article class="article__card article__card--small">
-                                <div class="article__img article__img--small">
-                                    <img src="./img/posts/post-img-12.jpg" srcset="./img/posts/post-img-12@2x.jpg 2x" alt="article img">
-                                </div>
-                                <div class="article__body article__body--small">
-                                    <a href="#!" class="article__tag">summer</a>
-                                    <h3 class="article__title article__title--small">
-                                        <a href="#!">One of Saturn s largest rings may be newer than anyone</a>
-                                    </h3>
-                                    <div class="info info--article">
-                                        <time datetime="2019-06-06" class="info__time">June 6, 2019</time>
-                                        <p class="info__author">
-                                            <span class="text-muted">By</span>
-                                            Rickie Baroch
-                                        </p>
+                            <div class="sidebar__row">
+                                <!-- article -->
+                                <article class="article__card article__card--small">
+                                    <div class="article__img article__img--small">
+                                        <img src="./img/posts/post-img-12.jpg" srcset="./img/posts/post-img-12@2x.jpg 2x" alt="article img">
                                     </div>
-                                </div>
-                            </article>
-                            <!-- article -->
-                            <article class="article__card article__card--small">
-                                <div class="article__img article__img--small">
-                                    <img src="./img/posts/post-img-13.jpg" srcset="./img/posts/post-img-13@2x.jpg 2x" alt="article img">
-                                </div>
-                                <div class="article__body article__body--small">
-                                    <a href="#!" class="article__tag">City</a>
-                                    <h3 class="article__title article__title--small">
-                                        <a href="#!">One of Saturn s largest rings may be newer than anyone</a>
-                                    </h3>
-                                    <div class="info info--article">
-                                        <time datetime="2019-06-06" class="info__time">June 6, 2019</time>
-                                        <p class="info__author">
-                                            <span class="text-muted">By</span>
-                                            Rickie Baroch
-                                        </p>
+                                    <div class="article__body article__body--small">
+                                        <a href="#!" class="article__tag">summer</a>
+                                        <h3 class="article__title article__title--small">
+                                            <a href="#!">One of Saturn s largest rings may be newer than anyone</a>
+                                        </h3>
+                                        <div class="info info--article">
+                                            <time datetime="2019-06-06" class="info__time">June 6, 2019</time>
+                                            <p class="info__author">
+                                                <span class="text-muted">By</span>
+                                                Rickie Baroch
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                            </article>
-                            <!-- article -->
-                            <article class="article__card article__card--small">
-                                <div class="article__img article__img--small">
-                                    <img src="./img/posts/post-img-14.jpg" srcset="./img/posts/post-img-14@2x.jpg 2x" alt="article img">
-                                </div>
-                                <div class="article__body article__body--small">
-                                    <a href="#!" class="article__tag">Photography</a>
-                                    <h3 class="article__title article__title--small">
-                                        <a href="#!">One of Saturn s largest rings may be newer than anyone</a>
-                                    </h3>
-                                    <div class="info info--article">
-                                        <time datetime="2019-06-06" class="info__time">June 6, 2019</time>
-                                        <p class="info__author">
-                                            <span class="text-muted">By</span>
-                                            Rickie Baroch
-                                        </p>
+                                </article>
+                                <!-- article -->
+                                <article class="article__card article__card--small">
+                                    <div class="article__img article__img--small">
+                                        <img src="./img/posts/post-img-13.jpg" srcset="./img/posts/post-img-13@2x.jpg 2x" alt="article img">
                                     </div>
-                                </div>
-                            </article>
+                                    <div class="article__body article__body--small">
+                                        <a href="#!" class="article__tag">City</a>
+                                        <h3 class="article__title article__title--small">
+                                            <a href="#!">One of Saturn s largest rings may be newer than anyone</a>
+                                        </h3>
+                                        <div class="info info--article">
+                                            <time datetime="2019-06-06" class="info__time">June 6, 2019</time>
+                                            <p class="info__author">
+                                                <span class="text-muted">By</span>
+                                                Rickie Baroch
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- article -->
+                                <article class="article__card article__card--small">
+                                    <div class="article__img article__img--small">
+                                        <img src="./img/posts/post-img-14.jpg" srcset="./img/posts/post-img-14@2x.jpg 2x" alt="article img">
+                                    </div>
+                                    <div class="article__body article__body--small">
+                                        <a href="#!" class="article__tag">Photography</a>
+                                        <h3 class="article__title article__title--small">
+                                            <a href="#!">One of Saturn s largest rings may be newer than anyone</a>
+                                        </h3>
+                                        <div class="info info--article">
+                                            <time datetime="2019-06-06" class="info__time">June 6, 2019</time>
+                                            <p class="info__author">
+                                                <span class="text-muted">By</span>
+                                                Rickie Baroch
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
                         </div>
                         <div class="sidebar__item">
-                            <h2 class="sidebar__caption">Categories</h2>
+                            <h2 class="sidebar__caption sidebar__caption--nopadding">
+                                <button class="sidebar__btn" type="button">Categories</button>
+                            </h2>
                             <!-- categories -->
                             <ul class="categories__list">
                                 <li class="categories__item">
@@ -508,7 +514,9 @@
                             </ul>
                         </div>
                         <div class="sidebar__item">
-                            <h2 class="sidebar__caption">Social media</h2>
+                            <h2 class="sidebar__caption sidebar__caption--nopadding">
+                                <button class="sidebar__btn" type="button">Social media</button>
+                            </h2>
                             <!-- social -->
                             <ul class="social__list">
                                 <li class="social__item">
@@ -595,7 +603,9 @@
                             </ul>
                         </div>
                         <div class="sidebar__item">
-                            <h2 class="sidebar__caption">Tags</h2>
+                            <h2 class="sidebar__caption sidebar__caption--nopadding">
+                                <button class="sidebar__btn" type="button">Tags</button>
+                            </h2>
                             <ul class="tags__list">
                                 <li class="tags__item">
                                     <a href="#!" class="tags__link">Business</a>

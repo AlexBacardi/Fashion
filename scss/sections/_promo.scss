@@ -34,6 +34,11 @@
     @include tablet {
         height: 500px;
     }
+
+    @include mobile {
+        height: 300px;
+        padding-bottom: 30px;
+    }
 }
 
 .promo__content {
@@ -54,4 +59,12 @@
     margin-bottom: 10px;
     font-size: 40px;
     line-height: 1.25;
+
+    @include mobile {
+        font-size: 35px;
+    }
+
+    @include mobileXS {
+        font-size: 20px;
+    }
 }

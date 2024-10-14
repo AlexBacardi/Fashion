@@ -1,7 +1,12 @@
 .social__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 3px;
+    column-gap: 3px;
+    row-gap: 3px;
+
+    @include notebook {
+        justify-content: center;
+    }
 
     &--footer {
         gap: 20px;
