@@ -38,4 +38,18 @@
         transform: scale(1);
         transform-origin: left;
     }
+
+    &--footer {
+        font-family: "PT Sans", sans-serif;
+        font-size: 14px;
+        color: #666666;
+
+        &:hover {
+            color: #666666;
+        }
+
+        &::before {
+            display: none;
+        }
+    }
 }

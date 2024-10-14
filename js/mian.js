@@ -10,7 +10,7 @@ Fancybox.bind("[data-fancybox]", {
 
 //slider
 const swiper = new Swiper('.swiper', {
-    slidesPerView: 5,
+    slidesPerView: 6,
     spaceBetween: 20,
     loop: true,
     speed: 400,

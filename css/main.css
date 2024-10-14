@@ -102,7 +102,6 @@ body {
   font-family: "PT Serif", serif;
   font-size: 16px;
   line-height: normal;
-  margin-bottom: 600px;
 }
 
 .container {
@@ -195,7 +194,7 @@ body {
 .svg-google {
   height: 20px;
   fill: #5A5A5A;
-  transition: fill 0.3s ease-in;
+  transition: fill 0.4s ease-in;
 }
 
 .header {
@@ -261,6 +260,17 @@ body {
 .nav__link:hover::before {
   transform: scale(1);
   transform-origin: left;
+}
+.nav__link--footer {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  color: #666666;
+}
+.nav__link--footer:hover {
+  color: #666666;
+}
+.nav__link--footer::before {
+  display: none;
 }
 
 .promo {
@@ -642,6 +652,9 @@ body {
   flex-wrap: wrap;
   gap: 3px;
 }
+.social__list--footer {
+  gap: 20px;
+}
 
 .social__item {
   max-width: 88px;
@@ -651,6 +664,29 @@ body {
 .social__item:hover svg, .social__item:hover .social__link {
   fill: #c9a96e;
   color: #c9a96e;
+}
+.social__item--footer {
+  max-width: unset;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 1px solid #E5E5E5;
+  background-color: transparent;
+  border-radius: 50px;
+  position: relative;
+  transition: border-color 0.3s ease-in, background-color 0.3s ease-in;
+}
+.social__item--footer:hover, .social__item--footer:hover svg {
+  fill: #fff;
+  background-color: #c9a96e;
+  border-color: #c9a96e;
+}
+.social__item--footer svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: fill 1s ease-in;
 }
 
 .social__link {
@@ -663,6 +699,9 @@ body {
   text-decoration: none;
   color: #999999;
   transition: color 0.3s ease-in;
+}
+.social__link--footer {
+  font-size: 0;
 }
 
 .tags__list {
@@ -709,4 +748,36 @@ body {
   -o-object-position: center;
      object-position: center;
   aspect-ratio: 29.6/29.6;
+}
+
+.footer {
+  padding: 100px 0 30px;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__logo {
+  margin-bottom: 60px;
+}
+
+.footer__nav {
+  margin-bottom: 29px;
+}
+
+.footer__social {
+  margin-bottom: 40px;
+}
+
+.foooter__copy {
+  align-self: stretch;
+  padding-top: 30px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  color: #666666;
+  text-align: center;
+  border-top: 1px solid #979797;
 }/*# sourceMappingURL=main.css.map */
