@@ -4,6 +4,10 @@
     display: flex;
     align-items: center;
     gap: 30px;
+
+    @include tablet {
+        display: none;
+    }
 }
 
 .nav__item {}
@@ -14,8 +18,8 @@
     text-decoration: none;
     color: #171717;
     transition: color .4s ease-in;
-    
-    
+
+
     &:hover {
         color: #c9a96e;
     }
@@ -51,5 +55,28 @@
         &::before {
             display: none;
         }
+    }
+}
+
+.nav__btn {
+    width: 44px;
+    height: 44px;
+    padding: 17px 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    display: none;
+
+    span {
+        display: inline-block;
+        width: 26px;
+        border: 1px solid #c9a96e;
+        border-radius: 3px;
+    }
+
+    @include tablet {
+        display: flex;
     }
 }

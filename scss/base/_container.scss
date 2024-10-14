@@ -3,6 +3,23 @@
     padding: 0 15px;
     margin: 0 auto;
 
+    
+    @include notebook {
+        max-width: 1024px;
+    }
+    
+    @include tablet {
+        max-width: 768px;
+    }
+    
+    @include mobile {
+        max-width: 540px;
+    }
+    
+    @include mobileXS {
+        min-width: 320px;
+    }
+    
     &--lg {
         max-width: 1790px;
     }

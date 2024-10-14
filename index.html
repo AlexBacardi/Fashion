@@ -77,10 +77,44 @@
                             <a href="#!" class="nav__link">Purchase</a>
                         </li>
                     </ul>
+                    <button class="nav__btn" type="button" id="openMobileNav">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </nav>
             </div>
         </div>
     </header>
+    <!-- mobile-menu -->
+    <section class="mobile-nav">
+        <h2 class="visually-hidden">
+            Мобильная навигация
+        </h2>
+        <div class="mobile-nav__header">
+            <button class="mobile-nav__btn" id="closeMobileNav" aria-label="Закрыть мобильное меню">
+            </button>
+        </div>
+        <div class="mobile-nav__body">
+            <ul class="mobile-nav__list">
+                <li class="mobile-nav__item">
+                    <a href="#!">Home</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="#!">Recipes</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="#!">Article</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="#!">Contact</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="#!">Purchase</a>
+                </li>
+            </ul>
+        </div>
+    </section>
     <!-- main -->
     <main class="main">
         <!-- promo -->
@@ -107,7 +141,7 @@
             </div>
         </section>
         <!-- blog -->
-        <section class="blog">
+        <section class="blog none">
             <h2 class="visually-hidden">Fashion blog article</h2>
             <div class="container">
                 <div class="blog__row">
@@ -606,7 +640,7 @@
             </div>
         </section>
         <!-- follow -->
-        <section class="follow">
+        <section class="follow none">
             <div class="container--fluid">
                 <h2 class="follow__title">
                     Follow our @instagram_name
@@ -649,7 +683,7 @@
         </section>
     </main>
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer none">
         <div class="container">
             <div class="footer__content">
                 <span class="footer__logo logo">

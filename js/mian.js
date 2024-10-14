@@ -14,14 +14,7 @@ const swiper = new Swiper('.swiper', {
     spaceBetween: 20,
     loop: true,
     speed: 400,
-    // scrollbar: {
-    //     el: ".coaches__scrollbar",
-    // },
-    // navigation: {
-    //     nextEl: ".btn-next",
-    //     prevEl: ".btn-prev",
-    // },
-    // breakpoints: {
+    breakpoints: {
     //     320: {
     //         slidesPerView: 1.2,
     //         spaceBetween: 20,
@@ -38,13 +31,46 @@ const swiper = new Swiper('.swiper', {
     //         slidesPerView: 2.7,
     //         spaceBetween: 20,
     //     },
-    //     1024: {
-    //         slidesPerView: 3,
-    //         spaceBetween: 20,
-    //     },
-    //     1281: {
-    //         slidesPerView: 3.9,
-    //         spaceBetween: 30,
-    //     }
-    // }
+        1440: {
+            slidesPerView: 4.7,
+            spaceBetween: 20,
+        },
+        1590: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+        }
+    }
 });
+
+//mobile menu
+const mobileBtnOpen = document.querySelector('#openMobileNav');
+
+const mobileBtnClose = document.querySelector('#closeMobileNav');
+
+const mobileNav = document.querySelector('.mobile-nav');
+
+const mobileNavLinks = mobileNav.querySelectorAll('.mobile-nav__list a');
+
+function openMenu() {
+
+    mobileNav.classList.add('mobile-nav--open');
+
+    document.body.classList.add('no-scroll');
+}
+
+function closeMenu() {
+
+    mobileNav.classList.remove('mobile-nav--open');
+
+    document.body.classList.remove('no-scroll');
+}
+
+mobileNavLinks.forEach(function (elem) {
+
+    elem.addEventListener('click', closeMenu);
+
+});
+
+mobileBtnOpen.addEventListener('click', openMenu);
+
+mobileBtnClose.addEventListener('click', closeMenu);
