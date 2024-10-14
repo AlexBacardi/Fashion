@@ -1,0 +1,23 @@
+.follow {}
+
+.follow__title {
+    text-align: center;
+    margin-bottom: 39px;
+    font-size: 24px;
+}
+
+.follow__slider {}
+
+.follow__img {
+    display: inline-block;
+    width: 296px;
+    height: 296px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        aspect-ratio: 29.6 / 29.6;
+    }
+}
