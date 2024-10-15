@@ -15,7 +15,7 @@
     }
 
     @include mobile {
-        max-width: 270px;
+        max-width: 290px;
     }
 
     &--wide {
@@ -29,7 +29,7 @@
         }
 
         @include mobile {
-            width: 270px;
+            width: 290px;
         }
     }
 
@@ -61,14 +61,14 @@
     }
 
     @include mobile {
-        width: 270px;
+        width: 290px;
     }
 
     &--wide {
         width: 100%;
 
         @include mobile {
-            width: 270px;
+            width: 290px;
         }
     }
 
@@ -93,7 +93,7 @@
         padding: 25px 31px;
         align-items: flex-start;
 
-        @include tablet {
+        @include mobile {
             padding: 15px 0;
             align-items: center;
         }
@@ -145,6 +145,10 @@
         @include tablet {
             max-width: 285px;
         }
+
+        @include mobile {
+            text-align: center;
+        }
     }
 
     &--small {
@@ -166,7 +170,7 @@
 
     color: #666666;
 
-    @include tablet {
+    @include mobile {
         display: none;
     }
 }
