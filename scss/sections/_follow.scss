@@ -4,6 +4,10 @@
     text-align: center;
     margin-bottom: 39px;
     font-size: 24px;
+
+    @include mobile {
+        font-size: 20px;
+    }
 }
 
 .follow__slider {}
@@ -19,5 +23,9 @@
         object-fit: cover;
         object-position: center;
         aspect-ratio: 29.6 / 29.6;
+    }
+
+    @include mobile {
+        width: 250px;
     }
 }

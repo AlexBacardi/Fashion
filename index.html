@@ -53,7 +53,7 @@
 
 <body>
     <!-- header -->
-    <header class="header">
+    <header class="header" id="top">
         <div class="container container--lg">
             <div class="header__row">
                 <span class="logo">
@@ -400,10 +400,10 @@
                     <aside class="sidebar">
                         <div class="sidebar__item">
                             <h2 class="sidebar__caption sidebar__caption--nopadding">
-                                <button class="sidebar__btn" type="button">About the author</button>
+                                <button class="sidebar__btn" type="button" data-control="sidebar__btn">About the author</button>
                             </h2>
                             <!-- about author -->
-                            <article class="about__card">
+                            <article class="about__card" data-control="sidebar__block">
                                 <div class="about__img">
                                     <img src="./img/about/about-img.jpg" srcset="./img/about/about-img@2x.jpg 2x" alt="about img ">
                                 </div>
@@ -487,10 +487,10 @@
                         </div>
                         <div class="sidebar__item">
                             <h2 class="sidebar__caption sidebar__caption--nopadding">
-                                <button class="sidebar__btn" type="button">Categories</button>
+                                <button class="sidebar__btn" type="button" data-control="sidebar__btn">Categories</button>
                             </h2>
                             <!-- categories -->
-                            <ul class="categories__list">
+                            <ul class="categories__list" data-control="sidebar__block">
                                 <li class="categories__item">
                                     <a href="#!" class="categories__link">Fashion</a>
                                     <span class="categories__num">(23)</span>
@@ -515,10 +515,10 @@
                         </div>
                         <div class="sidebar__item">
                             <h2 class="sidebar__caption sidebar__caption--nopadding">
-                                <button class="sidebar__btn" type="button">Social media</button>
+                                <button class="sidebar__btn" type="button" data-control="sidebar__btn">Social media</button>
                             </h2>
                             <!-- social -->
-                            <ul class="social__list">
+                            <ul class="social__list" data-control="sidebar__block">
                                 <li class="social__item">
                                     <a href="#!" class="social__link" target="_blank">
                                         <svg class="svg-facebook">
@@ -604,9 +604,10 @@
                         </div>
                         <div class="sidebar__item">
                             <h2 class="sidebar__caption sidebar__caption--nopadding">
-                                <button class="sidebar__btn" type="button">Tags</button>
+                                <button class="sidebar__btn" type="button" data-control="sidebar__btn">Tags</button>
                             </h2>
-                            <ul class="tags__list">
+                            <!-- tags -->
+                            <ul class="tags__list" data-control="sidebar__block">
                                 <li class="tags__item">
                                     <a href="#!" class="tags__link">Business</a>
                                 </li>
@@ -650,7 +651,7 @@
             </div>
         </section>
         <!-- follow -->
-        <section class="follow none">
+        <section class="follow">
             <div class="container--fluid">
                 <h2 class="follow__title">
                     Follow our @instagram_name
@@ -693,14 +694,14 @@
         </section>
     </main>
     <!-- footer -->
-    <footer class="footer none">
+    <footer class="footer">
         <div class="container">
             <div class="footer__content">
                 <span class="footer__logo logo">
                     fashion
                 </span>
                 <nav class="footer__nav nav">
-                    <ul class="nav__list">
+                    <ul class="nav__list nav__list--footer">
                         <li class="nav__item">
                             <a href="#!" class="nav__link nav__link--footer">Home</a>
                         </li>
@@ -770,6 +771,12 @@
             </div>
         </div>
     </footer>
+    <!-- scroll-top -->
+    <a href="#top" class="top-link" id="scrollToTopBtn">
+        <svg class="svg-arrow-top">
+            <use href="./img/icons/sprite.svg#svg-arrow-top"></use>
+        </svg>
+    </a>
     <!-- vendors -->
     <script src="./libs/fancybox/fancybox.umd.js"></script>
     <script src="./libs/swiper-slider/swiper-bundle.min.js"></script>

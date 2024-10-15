@@ -2,6 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    transition: all 0.3s ease-in;
+    
+
+    @include tablet {
+        overflow: hidden;
+        max-height: 0;
+    }
 }
 
 .tags__item {
@@ -9,7 +16,7 @@
     font-size: 14px;
     background-color: #f8f9fa;
     transition: transform 0.3s ease-in;
-    
+
 
     &:hover {
         transform: translateY(-2px);
@@ -25,5 +32,5 @@
     text-decoration: none;
 
     transition: color 0.3s ease-in;
-    
+
 }

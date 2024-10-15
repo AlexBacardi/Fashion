@@ -10,34 +10,56 @@ Fancybox.bind("[data-fancybox]", {
 
 //slider
 const swiper = new Swiper('.swiper', {
-    slidesPerView: 6,
-    spaceBetween: 20,
-    loop: true,
     speed: 400,
     breakpoints: {
-    //     320: {
-    //         slidesPerView: 1.2,
-    //         spaceBetween: 20,
-    //     },
-    //     539: {
-    //         slidesPerView: 1.5,
-    //         spaceBetween: 10,
-    //     },
-    //     767: {
-    //         slidesPerView: 2.2,
-    //         spaceBetween: 30,
-    //     },
-    //     970: {
-    //         slidesPerView: 2.7,
-    //         spaceBetween: 20,
-    //     },
+        320: {
+            slidesPerView: 1.2,
+            spaceBetween: 10,
+            loop: true,
+        },
+        325: {
+            slidesPerView: 1.3,
+            spaceBetween: 10,
+            loop: true,
+        },
+        375: {
+            slidesPerView: 1.5,
+            spaceBetween: 10,
+            loop: true,
+        },
+        425: {
+            slidesPerView: 1.6,
+            spaceBetween: 10,
+            loop: true,
+        },
+        539: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            loop: true,
+        },
+        767: {
+            slidesPerView: 2.6,
+            spaceBetween: 10,
+            loop: true,
+        },
+        970: {
+            slidesPerView: 3.3,
+            spaceBetween: 10,
+            loop: true,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            loop: true,
+        },
         1440: {
             slidesPerView: 4.7,
             spaceBetween: 20,
+            loop: true,
         },
         1590: {
-            slidesPerView: 5,
-            spaceBetween: 20,
+            slidesPerView: 6,
+            spaceBetween: 10,
         }
     }
 });
@@ -74,3 +96,40 @@ mobileNavLinks.forEach(function (elem) {
 mobileBtnOpen.addEventListener('click', openMenu);
 
 mobileBtnClose.addEventListener('click', closeMenu);
+
+// accordion
+const asideBtns = document.querySelectorAll('[data-control="sidebar__btn"]');
+
+asideBtns.forEach(function(btn) {
+
+    btn.addEventListener('click',  function (event) {
+
+        const currentBlock = event.target.closest('.sidebar__item');
+
+        const contentBlock = currentBlock.querySelector('[data-control="sidebar__block"]');
+
+        if (contentBlock.classList.toggle('.open')) {
+
+            contentBlock.style.maxHeight = contentBlock.scrollHeight + 'px';
+
+        } else  {
+
+            contentBlock.style.maxHeight = '0px';
+        }
+    });
+});
+
+// link-top 
+const scrollBtn = document.querySelector('#scrollToTopBtn');
+
+window.addEventListener('scroll', function () {
+
+    if (window.pageYOffset > window.innerHeight) {
+
+        scrollBtn.classList.add('top-link--visible');
+
+    } else {
+
+        scrollBtn.classList.remove('top-link--visible');
+    }
+});

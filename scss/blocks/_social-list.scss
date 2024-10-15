@@ -3,13 +3,25 @@
     flex-wrap: wrap;
     column-gap: 3px;
     row-gap: 3px;
+    transition: all 0.3s ease-in;
+    
 
     @include notebook {
         justify-content: center;
     }
 
+    @include tablet {
+        overflow: hidden;
+        max-height: 0;
+    }
+
     &--footer {
         gap: 20px;
+        max-height: unset;
+
+        @include mobileXS {
+            gap: 10px;
+        }
     }
 
 
@@ -36,7 +48,8 @@
         border-radius: 50px;
         position: relative;
 
-        &:hover, &:hover svg {
+        &:hover,
+        &:hover svg {
             fill: #fff;
             background-color: #c9a96e;
             border-color: #c9a96e;

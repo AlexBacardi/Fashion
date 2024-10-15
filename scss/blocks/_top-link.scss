@@ -1,0 +1,38 @@
+.top-link {
+    position: fixed;
+    z-index: 3;
+    right: 40px;
+    bottom: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #c9a96e;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease-in;
+
+    &--visible {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    @include tablet {
+        width: 45px;
+        height: 45px;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 10px;
+    }
+
+    @include mobile {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+    }
+}

@@ -1,5 +1,9 @@
 .blog {
     padding: 60px 0 80px;
+
+    @include tablet {
+        padding-bottom: 60px;
+    }
 }
 
 .blog__row {
@@ -10,6 +14,7 @@
         flex-direction: column;
         gap: 60px;
     }
+
 }
 
 .blog__content {
@@ -23,6 +28,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 33px 30px;
+
+    @include mobile {
+        justify-content: center;
+    }
 }
 
 .blog__pagination {
