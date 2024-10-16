@@ -11,55 +11,67 @@ Fancybox.bind("[data-fancybox]", {
 //slider
 const swiper = new Swiper('.swiper', {
     speed: 400,
+    slidesPerView: 'auto',
     breakpoints: {
         320: {
             slidesPerView: 1.2,
             spaceBetween: 10,
+            slidesPerView: 'auto',
             loop: true,
         },
         325: {
             slidesPerView: 1.3,
             spaceBetween: 10,
+            slidesPerView: 'auto',
             loop: true,
         },
         375: {
             slidesPerView: 1.5,
             spaceBetween: 10,
+            slidesPerView: 'auto',
             loop: true,
         },
         425: {
             slidesPerView: 1.6,
             spaceBetween: 10,
+            slidesPerView: 'auto',
             loop: true,
         },
         539: {
             slidesPerView: 2,
             spaceBetween: 10,
+            slidesPerView: 'auto',
             loop: true,
         },
         767: {
             slidesPerView: 2.6,
             spaceBetween: 10,
+            slidesPerView: 'auto',
             loop: true,
         },
         970: {
             slidesPerView: 3.3,
             spaceBetween: 10,
+            slidesPerView: 'auto',
             loop: true,
         },
         1200: {
             slidesPerView: 4,
             spaceBetween: 10,
+            slidesPerView: 'auto',
             loop: true,
         },
         1440: {
             slidesPerView: 4.7,
             spaceBetween: 20,
+            slidesPerView: 'auto',
             loop: true,
         },
         1590: {
-            slidesPerView: 6,
+            slidesPerView: 5,
             spaceBetween: 10,
+            slidesPerView: 'auto',
+            loop: true,
         }
     }
 });

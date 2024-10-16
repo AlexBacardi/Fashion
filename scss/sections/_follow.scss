@@ -10,7 +10,11 @@
     }
 }
 
-.follow__slider {}
+.follow__slider {
+    .swiper-slide {
+        width: fit-content;
+    }
+}
 
 .follow__img {
     display: inline-block;

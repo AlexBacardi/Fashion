@@ -1,3 +1,9 @@
+@mixin desktopLG() {
+    @media (min-width: 1900px) {
+        @content;
+    }
+}
+
 @mixin notebook() {
     @media (max-width: 1199px) {
         @content;

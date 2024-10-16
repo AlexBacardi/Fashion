@@ -27,5 +27,11 @@
     &--fluid {
         max-width: unset;
         width: 100%;
+
+        @include desktopLG {
+            max-width: 1600px;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
     }
 }
